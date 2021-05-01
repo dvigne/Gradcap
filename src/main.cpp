@@ -68,7 +68,7 @@ void setup() {
 
   // Turn on onboard LED for status
   pinMode(LED_BUILTIN, OUTPUT);
-  digitalWrite(LED_BUILTIN, LOW);
+  digitalWrite(LED_BUILTIN, !STATUS);
 
   // Neopixel Setup
   strip.begin();
