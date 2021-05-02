@@ -114,6 +114,7 @@ void loop() {
       val += dir;
       break;
     case LED4:
+    {
       uint32_t randColor = Adafruit_NeoPixel::Color(random(255), random(255), random(255));
       for (size_t i = 0; i < LED_COUNT; i++) {
         strip.setPixelColor(i, randColor);
@@ -130,5 +131,6 @@ void loop() {
         delay(50);
       }
       break;
+    }
   }
 }
