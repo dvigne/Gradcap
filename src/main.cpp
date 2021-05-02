@@ -102,7 +102,7 @@ void loop() {
       strip.fill(Adafruit_NeoPixel::Color(255, 0 + val, 0), 0, 8);
       strip.fill(Adafruit_NeoPixel::Color(255, 255, 0 + val), 9, 16);
       strip.fill(Adafruit_NeoPixel::Color(0, 255 - val, 255), 17, LED_COUNT);
-      strip.setBrightness(255/3);
+      strip.setBrightness(10);
       delay(10);
       strip.show();
       if(val == 255) {
@@ -119,14 +119,13 @@ void loop() {
       for (size_t i = 0; i < LED_COUNT; i++) {
         strip.setPixelColor(i, randColor);
         strip.setPixelColor((i + LED_COUNT / 2) % LED_COUNT, randColor);
-        strip.setBrightness(255/3);
+        strip.setBrightness(10);
         strip.show();
         delay(50);
       }
       for (size_t i = 0; i < LED_COUNT; i++) {
         strip.setPixelColor(i, 0, 0, 0);
         strip.setPixelColor((i + LED_COUNT / 2) % LED_COUNT, 0, 0, 0);
-        strip.setBrightness(255/3);
         strip.show();
         delay(50);
       }
