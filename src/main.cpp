@@ -11,8 +11,8 @@ AsyncWebServer webServer(PORT);
 Adafruit_NeoPixel strip(LED_COUNT, LED_CONTROL_PIN, NEO_GRB + NEO_KHZ800);
 
 // Global Properties
-enum Patterns { OFF, LED1, LED2, LED3, LED4 };
-Patterns pattern = OFF;
+enum Patterns { OFF, LED1, LED2, LED3, LED4};
+Patterns pattern = LED1;
 
 // Pages
 const char * indexPage =
